@@ -148,8 +148,11 @@
 }
 
 
-.main {
+body,html {
     background-color: #333333;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 .main__container {
@@ -296,4 +299,149 @@
         padding: 12px 36px;
         margin: 2.5rem 0;
     }
+}
+
+.about {
+    display: flex;
+    width: 100%;
+    padding: 78px;
+    background-color: #333333;
+}
+
+.about__text {
+    flex: 1 1 50%;
+    padding: 20px;
+    width: 550px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.about__text p {
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+.about__content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about__profile {
+    flex: 1 1 50%;
+    padding: 20px;
+    width: 45%;
+    text-align: center;
+}
+
+.about__profile img {
+    display: block;
+    margin: 0 auto;
+    height: 70%;
+    width: 70%;
+    border-radius: 50%;
+}
+
+.about__profile h1 {
+    color: #fff;
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin-top: 1rem;
+}
+
+.about__profile h5 {
+    color: #fff;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+.about__container {
+    color: #fff;
+    font-size: 0.8rem;
+    width: 225px;
+    margin: 0 auto;
+    padding: 0.4em;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.item1 {
+    background: linear-gradient(to right, #808080, #FF69B4);
+    border-radius: 15%;
+    padding: 4px;
+}
+
+.item2 {
+    background:#008000;
+    border-radius: 15%;
+    padding: 4px;
+}
+
+.item3 {
+    background:#ffa300;
+    border-radius: 15%;
+    padding: 4px;
+}
+
+.item4 {
+    background:#4863A0;
+    border-radius: 15%;
+    padding: 4px;
+}
+
+.item5 {
+    background:#737CA1;
+    border-radius: 15%;
+    padding: 4px;
+}
+
+.item6 {
+    background:#FD5800;
+    border-radius: 15%;
+    padding: 4px;
+}
+
+.item7 {
+    background:#7b679a;
+    border-radius: 15%;
+    padding: 4px;
+}
+
+.item8 {
+    background:#728fce;
+    border-radius: 15%;
+    padding: 4px;
+}
+
+.item9 {
+    background:#e4cd05;
+    border-radius: 15%;
+    padding: 4px;
+}
+
+.item10 {
+    background:#ff9d00;
+    border-radius: 15%;
+    padding: 4px;
+}
+
+@media screen and (max-width: 768px) {
+    .about__profile,
+    .about__text {
+        flex: 1 1 100%;
+    }
+    
 }
