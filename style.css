@@ -1,3 +1,10 @@
+:root {
+    --border: .2rem solid rgba(0,0,0,.1);
+    --outline: .1rem solid rgba(0,0,0,.1);
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    --outline-hover: .2rem solid #ffd400;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -226,7 +233,7 @@ body,html {
     left: 0;
     width: 0;
     height: 100%;
-    background: #b721ff;
+    background: #21d4fd;
     transition: all 0.35s;
     border-radius: 4px;
 }
@@ -304,7 +311,7 @@ body,html {
 .about {
     display: flex;
     width: 100%;
-    padding: 78px;
+    padding-top: 78px;
     background-color: #333333;
 }
 
@@ -317,7 +324,7 @@ body,html {
 }
 
 .about__text p {
-    color: #fcfc;
+    color: #fff ;
     letter-spacing: 1px;
     line-height: 28px;
     font-size: 18px;
@@ -444,4 +451,55 @@ body,html {
         flex: 1 1 100%;
     }
     
+}
+
+.projects {
+    padding: 4rem;
+    margin: 1rem auto;
+    max-width: 1300px;
+}
+
+.projects h1 {
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.projects p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.box {
+    padding: 3rem 2rem;
+    background: #ffffff;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    max-width: 100%; 
+}
+
+.box:hover {
+    outline: var(--outline-hover);
+    outline-offset: 0rem;
+}
+
+.box h3 {
+    font-size: 2rem;
+    line-height: 1.8;
+    color: #131313;
+}
+
+.box p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #131313;
+    padding: 1rem 0;
 }
