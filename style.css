@@ -174,6 +174,18 @@ body,html {
     width: 100%;
     max-width: 1300px;
     padding: 0 50px;
+    animation: transitionIn 1s;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
 }
 
 .main__content h1 {
@@ -185,6 +197,20 @@ body,html {
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 2s /* steps(17) */,
+        cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% {border-color: transparent;}
+}
+
+@keyframes typing {
+    from {width: 0;}
 }
 
 .main__content h2 {
@@ -489,6 +515,10 @@ body,html {
     max-width: 100%; 
 }
 
+.box:nth-last-child() {
+    transition-delay: 5ms;
+}
+
 .box:hover {
     outline: var(--outline-hover);
     outline-offset: 0rem;
@@ -505,4 +535,23 @@ body,html {
     line-height: 1.8;
     color: #131313;
     padding: 1rem 0;
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+    transform: translateX(-100%);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
 }

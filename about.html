@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="app.js"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -37,59 +38,62 @@
         </div>
     </nav>
     <div class="main">
-        <div class="about">
-            <div class="about__content">
-                <div class="about__profile">
-                    <img src="images/gaberichmond.jpg" alt="pic">
-                    <h1>Gabriel Ngo</h1>
-                    <h5>Mapua University</h5>
-                        <div class="about__container">
-                            <div class="item1">C/C++</div>
-                            <div class="item2">C#</div>
-                            <div class="item3">Java</div>
-                            <div class="item4">Python</div>
-                            <div class="item5">PHP</div>
-                            <div class="item6">HTML5</div>
-                            <div class="item7">CSS</div>
-                            <div class="item8">PHPMyAdmin</div>
-                            <div class="item9">Javascript</div>
-                            <div class="item10">SQL</div>
-                        </div>
-                </div>
-                <div class="about__text">
-                    <p>An aspiring UI/UX Developer who aims to leverage concepts and skills acquired from study to a dynamic corporate setting. With a dedication to make an impact, I aim to provide fresh perspectives and innovative solutions through immersing myself in projects and cultivate my expertise in this industry.</p>
-                    <p>Currently, I am a graduating student at Mapua University with a thesis focusing on contributing in the rapid growth of Machine Learning. Our Thesis aims to further optimize capable models. (More details at the section below)</p>
-                    <p>Personally, I have a keen interest in the ever-evolving tech industry. I find myself drawn to the what drives these companies to make products for the consumer market. From the modern mobile phones, and the innovative applications, its amazing how impactful technology has made. Moreover, my interests extend to the hardware side such as PC components where advancements continually push the boundaries of performance and efficiency. </p>
+        <section class="hidden">
+            <div class="about">
+                <div class="about__content">
+                    <div class="about__profile">
+                        <img src="images/gaberichmond.jpg" alt="pic">
+                        <h1>Gabriel Ngo</h1>
+                        <h5>Mapua University</h5>
+                            <div class="about__container">
+                                <div class="item1">C/C++</div>
+                                <div class="item2">C#</div>
+                                <div class="item3">Java</div>
+                                <div class="item4">Python</div>
+                                <div class="item5">PHP</div>
+                                <div class="item6">HTML5</div>
+                                <div class="item7">CSS</div>
+                                <div class="item8">PHPMyAdmin</div>
+                                <div class="item9">Javascript</div>
+                                <div class="item10">SQL</div>
+                            </div>
+                    </div>
+                    <div class="about__text">
+                        <p>An aspiring UI/UX Developer who aims to leverage concepts and skills acquired from study to a dynamic corporate setting. With a dedication to make an impact, I aim to provide fresh perspectives and innovative solutions through immersing myself in projects and cultivate my expertise in this industry.</p>
+                        <p>Currently, I am a graduating student at Mapua University with a thesis focusing on contributing in the rapid growth of Machine Learning. Our Thesis aims to further optimize capable models. (More details at the section below)</p>
+                        <p>Personally, I have a keen interest in the ever-evolving tech industry. I find myself drawn to the what drives these companies to make products for the consumer market. From the modern mobile phones, and the innovative applications, its amazing how impactful technology has made. Moreover, my interests extend to the hardware side such as PC components where advancements continually push the boundaries of performance and efficiency. </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    
-        <div id="projects" class="projects">
-            <h1>Here are some things I've worked on: </h1> <br>
-            <div class="box-container">
-                <div class="box">
-<!--                     <img src="/images" alt="pic"> -->
-                    <h3>Thesis</h3>
-                    <h4>A Comparative Analysis of Quantized and Non-Quantized BERT Model Performance for the Low-Resource Tagalog Language through Binary Text Classification (2022-2024)</h4>
-                    <p>In our study, we employ Google's powerful transformer model BERT for binary sentiment analysis, a crucial task in natural language processing. Leveraging state-of-the-art machine learning techniques, we apply quantization to the transformer model. This approach aims to optimize the model by significantly reducing hardware requirements without compromising its capability in accurately classifying text sentiment. Our research highlights the efficacy of quantization in enhancing the efficiency and practicality of deep learning models for real-world applications.</p>
-                    <button class="main__btn"><a href="https://github.com/GabeRichmond/tagalog-bert-comparative-analysis">Link</a></button>
+        </section>
+        
+        <section class="hidden">
+            <div id="projects" class="projects">
+                <h1>Here are some things I've worked on: </h1> <br>
+                <div class="box-container">
+                    <div class="box hidden">
+    <!--                     <img src="/images" alt="pic"> -->
+                        <h3>Thesis</h3>
+                        <h4>A Comparative Analysis of Quantized and Non-Quantized BERT Model Performance for the Low-Resource Tagalog Language through Binary Text Classification (2022-2024)</h4>
+                        <p>In our study, we employ Google's powerful transformer model BERT for binary sentiment analysis, a crucial task in natural language processing. Leveraging state-of-the-art machine learning techniques, we apply quantization to the transformer model. This approach aims to optimize the model by significantly reducing hardware requirements without compromising its capability in accurately classifying text sentiment. Our research highlights the efficacy of quantization in enhancing the efficiency and practicality of deep learning models for real-world applications.</p>
+                        <button class="main__btn"><a href="https://github.com/GabeRichmond/tagalog-bert-comparative-analysis">Link</a></button>
+                    </div>
+                    <div class="box hidden">
+    <!--                     <img src="/images" alt="pic"> -->
+                        <h3>Project</h3>
+                        <h4>DocQueue</h4>
+                        <p>During our software engineering classes at Mapua University, one of the requirements was to create an mobile application. The concept our group had in mind was to develop a patient-doctor appointment application with features such as sign-up, login, validation and setting an appointment based on availability and schedules. It is hosted locally for presentation purposes, but it demonstrates practical implementation of software engineering principles in addressing real-world needs in other industries such as healthcare. </p>
+                        <button class="main__btn"><a href="https://github.com/GabeRichmond/DocQueue">Link</a></button>
+                    </div>
+    <!--                 <div class="box">
+                        <img src="/images" alt="pic">
+                        <h3>Project</h3>
+                        <p>Project description</p>
+                        <button class="main__btn"><a href="/">Link</a></button>
+                    </div> -->
                 </div>
-                <div class="box">
-<!--                     <img src="/images" alt="pic"> -->
-                    <h3>Project</h3>
-                    <h4>DocQueue</h4>
-                    <p>During our software engineering classes at Mapua University, one of the requirements was to create an mobile application. The concept our group had in mind was to develop a patient-doctor appointment application with features such as sign-up, login, validation and setting an appointment based on availability and schedules. It is hosted locally for presentation purposes, but it demonstrates practical implementation of software engineering principles in addressing real-world needs in other industries such as healthcare. </p>
-                    <button class="main__btn"><a href="https://github.com/GabeRichmond/DocQueue">Link</a></button>
-                </div>
-<!--                 <div class="box">
-                    <img src="/images" alt="pic">
-                    <h3>Project</h3>
-                    <p>Project description</p>
-                    <button class="main__btn"><a href="/">Link</a></button>
-                </div> -->
             </div>
-        </div>
+        </section>
     </div>
-    <script src="app.js"></script>
 </body>
 </html>
