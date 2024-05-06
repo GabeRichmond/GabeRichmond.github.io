@@ -375,14 +375,6 @@ body,html {
     text-align: center;
 }
 
-.about__profile img {
-    display: block;
-    margin: 0 auto;
-    height: 55%;
-    width: 55%;
-    border-radius: 10%;
-}
-
 .about__profile h1 {
     color: #fff;
     font-size: 2rem;
